@@ -59,6 +59,8 @@ func Run(interval int64, exporter *Exporter) {
 			log.WithError(err).Error("Could not get images")
 		}
 
+		imageMetric.Reset()
+
 		for _, image := range images {
 			log.Debugf("Process image: %#v", image)
 			for _, container := range image.Containers {

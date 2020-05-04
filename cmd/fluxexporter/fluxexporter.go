@@ -146,7 +146,7 @@ var versionCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(versionCmd)
 
-	rootCmd.PersistentFlags().Int64Var(&interval, "interval", 3600, "Set interval for fetching the resource quota and usage.")
+	rootCmd.PersistentFlags().Int64Var(&interval, "interval", 3600, "Set interval for Flux API requests.")
 	rootCmd.PersistentFlags().StringVar(&logLevel, "log.level", "info", "Set the log level. Must be one of the follwing values: trace, debug, info, warn, error, fatal or panic.")
 	rootCmd.PersistentFlags().StringVar(&logOutput, "log.output", "plain", "Set the output format of the log line. Must be plain or json.")
 	rootCmd.PersistentFlags().StringVar(&listenAddress, "web.listen-address", ":8080", "Address to listen on for web interface and telemetry.")
