@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: flux-exporter
+  annotations:
+    github.com/project-slug: Staffbase/flux-exporter
+  tags:
+    - go
+spec:
+  type: service
+  lifecycle: production
