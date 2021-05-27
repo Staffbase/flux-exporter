@@ -1,3 +1,5 @@
+⚠️ **This repository is archived and is no longer maintained.**
+
 # Flux Exporter
 
 The Flux Exporter can be used to export additional metrics for Flux. It exports all Docker images with there current running version and the last filtered image version. If the current and the new image versions do not match the value for the metric is `1`. When they are equal the value is `0`.
